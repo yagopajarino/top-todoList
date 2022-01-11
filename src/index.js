@@ -1,2 +1,4 @@
 import './style.css'
-console.log("here we go")
+import dashboard from "./dashboard.js"
+
+body = document.querySelector("body")
