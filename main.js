@@ -110,13 +110,23 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/dashboard.js":
+/*!**************************!*\
+  !*** ./src/dashboard.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ dashboard)\n/* harmony export */ });\nfunction dashboard(){\n    main = document.createElement(\"main\")\n    main.classList.toggle(\"dashboardContainer\")\n    \n    lateral = document.createElement(\"div\")\n\n\n    return main\n}\n\n//# sourceURL=webpack://top-todolist/./src/dashboard.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\nconsole.log(\"here we go\")\n\n//# sourceURL=webpack://top-todolist/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _dashboard_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dashboard.js */ \"./src/dashboard.js\");\n\n\n\nbody = document.querySelector(\"body\")\n\n//# sourceURL=webpack://top-todolist/./src/index.js?");
 
 /***/ })
 
