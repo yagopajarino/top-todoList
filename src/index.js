@@ -1,4 +1,6 @@
 import './style.css'
 import dashboard from "./dashboard.js"
+import icon from "./task.png"
 
-body = document.querySelector("body")
+let body = document.querySelector("body")
+body.appendChild(dashboard())
