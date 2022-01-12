@@ -42,3 +42,21 @@ header {
     display: flex;
     flex-direction: column;
 }
+
+.qa {
+    padding: 0.5rem 1rem;
+    margin: 0.25rem 0;
+    background-color: #778f89;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.grey {
+    background-color: #BEC8D4;
+}
+
+.projHeaders {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
