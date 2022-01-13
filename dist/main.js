@@ -126,7 +126,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _dashboard_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dashboard.js */ \"./src/dashboard.js\");\n/* harmony import */ var _task_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./task.png */ \"./src/task.png\");\n/* harmony import */ var _task_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./task.js */ \"./src/task.js\");\n\n\n\n\n\nlet body = document.querySelector(\"body\")\nbody.appendChild((0,_dashboard_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])())\n;(0,_task_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"])()\n\n//# sourceURL=webpack://top-todolist/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _dashboard_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dashboard.js */ \"./src/dashboard.js\");\n/* harmony import */ var _task_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./task.png */ \"./src/task.png\");\n/* harmony import */ var _task_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./task.js */ \"./src/task.js\");\n\n\n\n\n\nlet body = document.querySelector(\"body\")\nbody.appendChild((0,_dashboard_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])())\n\nlet tasks = []\n\n//# sourceURL=webpack://top-todolist/./src/index.js?");
 
 /***/ }),
 
@@ -136,7 +136,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ task)\n/* harmony export */ });\nfunction task() {\n    return undefined\n}\n\n//# sourceURL=webpack://top-todolist/./src/task.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Task)\n/* harmony export */ });\nclass Task {\n    constructor(title, description, date, project, priority){\n        this.title = title\n        this.description = description\n        this.date = date\n        this.priority = priority\n        this.project = project\n        this.done = false\n    }\n    \n    changeDone(){\n        this.done = true\n    }\n\n}\n\n//# sourceURL=webpack://top-todolist/./src/task.js?");
 
 /***/ }),
 
