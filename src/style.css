@@ -151,7 +151,7 @@ select {
   }
 
   .colorBox {
-      width: 15%;
+      width: 12%;
       aspect-ratio: 1/1;
       border-radius: 50%;
       margin: 0.2rem 1rem;
@@ -206,5 +206,40 @@ input:focus-visible {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #778f89;
+}
+
+.projItem:hover {
+    background-color: #90aaa3;
+}
+
+.tasksList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.taskItem {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #7189b5
+}
+
+.taskItem:hover {
+    background-color: #94a2bb
+}
+
+.taskItem>div>span {
+    padding: 0.5rem;
+}
+
+.taskTitle {
+    font-weight: 600;
+}
+
+.taskDescription {
+    font-weight: 300;
 }
