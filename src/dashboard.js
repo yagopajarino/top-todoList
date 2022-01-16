@@ -44,7 +44,9 @@ export default function dashboard(){
     let dash = document.createElement("div")
     dash.classList.toggle("dash")
     let dashTitle = document.createElement("h2")
-    dashTitle.textContent = "Here Are your notes " + String.fromCodePoint(0x1f603);
+    let phrases = ["Here are your notes ", "Do today, not tomorrow ", "Hi there ", "The secret of getting ahead is getting started "]
+    let p = phrases[Math.floor(Math.random() * phrases.length)]
+    dashTitle.textContent = p + String.fromCodePoint(0x1f603);
     let taskDiv = document.createElement("div")
     taskDiv.classList.toggle("tasksList")
     dash.appendChild(dashTitle)

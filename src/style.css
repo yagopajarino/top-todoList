@@ -53,6 +53,7 @@ header {
 
 .newProBtn {
     background-color: #b0bbcf;
+    padding: 0.5rem 1rem ;
 
 }
 
@@ -242,4 +243,9 @@ input:focus-visible {
 
 .taskDescription {
     font-weight: 300;
+}
+
+.boxSelected {
+    background-color: #94a2bb;
+    opacity: 0.6;
 }
