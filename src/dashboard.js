@@ -10,10 +10,12 @@ export default function dashboard(){
     h2q.textContent = "Quick Access"
     let all = document.createElement("span")
     all.textContent = "All"
+    all.id = "allNotes"
     all.classList.toggle("qa")
     let today = document.createElement("span")
     today.classList.toggle("qa")
     today.textContent = "Today"
+    today.id = "todayNotes"
 
     quickAccess.appendChild(h2q)
     quickAccess.appendChild(all)

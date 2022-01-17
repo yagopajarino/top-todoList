@@ -15,12 +15,14 @@ export default class Dm {
         let name = document.createElement("input")
         name.type = "text"
         name.placeholder = "Name"
+        name.id = "projectName"
 
         let colorDiv = document.createElement("div")
         colorDiv.classList.toggle("colorDiv")
         let colorLabel = document.createElement("label")
         colorLabel.textContent = "Color"
         let colorSelector = document.createElement("input")
+        colorSelector.id = "projectColor"
         colorSelector.type = "color"
         colorSelector.value = "#ff0000"
         colorDiv.appendChild(colorLabel)
@@ -29,6 +31,7 @@ export default class Dm {
         let button = document.createElement("button")
         button.type = "button"
         button.classList.toggle("newItemButton")
+        button.id = "newProjectButton"
         button.textContent = "Save"
 
         form.appendChild(name)
@@ -57,18 +60,22 @@ export default class Dm {
         let name = document.createElement("input")
         name.type = "text"
         name.placeholder = "Title"
+        name.id = "taskTitle"
 
         let description = document.createElement("input")
         description.type = "text"
         description.placeholder = "Description"
+        description.id = "taskDesc"
 
         let date = document.createElement("input")
         date.type = "date"
+        date.id = "taskDate"
         let today = new Date();
         let k = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate()
         date.value = k
 
         let proj = document.createElement("select")
+        proj.id = "taskProj"
         let op = document.createElement("option")
         op.textContent = "Project"
         op.selected = true
@@ -85,6 +92,7 @@ export default class Dm {
         let button = document.createElement("button")
         button.type = "button"
         button.classList.toggle("newItemButton")
+        button.id = "newTaskButton"
         button.textContent = "Save"
 
         form.appendChild(name)
@@ -97,9 +105,6 @@ export default class Dm {
         formContainer.appendChild(form)
         div.appendChild(formContainer)
         return div
-
-
-
     }
 
     static displayProjects(projectsArray) {
